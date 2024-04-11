@@ -5,11 +5,11 @@
     <type>Promotional</type>
     <country>Belarus</country>
   </baseOldCard>
-  <baseOldCard id="sdfo09sdf87d" thema="Sport" year="2022">
+  <baseOldCard id="sdfo09sdf87d"  year="2022" thema="Sport">
     <type>Ordinary</type>
     <country>Russia</country>
   </baseOldCard>
-  <baseOldCard id="sew43k56l45k" thema="People" year="2019" author="Karakozov R.">
+  <baseOldCard id="sew43k56l45k" author="Karakozov R." thema="People"   year="2019">
     <type>Greeting</type>
     <country>Georgia</country>
   </baseOldCard>
@@ -17,11 +17,11 @@
     <type>Greeting</type>
     <country>Georgia</country>
   </baseOldCard>
-  <baseOldCard id="iodfg94jh45h" thema="Nature" year="2022">
+  <baseOldCard id="iodfg94jh45h"  year="2022" thema="Nature">
     <type>Promotional</type>
     <country>Ukraine</country>
   </baseOldCard>
-  <baseOldCard id="453ojhd345j4" thema="Religion" year="2020" author="Smirnov A.">
+  <baseOldCard id="453ojhd345j4" thema="Religion" author="Smirnov A." year="2020" >
     <type>Ordinary</type>
     <country>Kazakhstan</country>
   </baseOldCard>
@@ -34,7 +34,7 @@
     <country>Belarus</country>
   </baseOldCard>
 
-  <specialOldCard id="4059fghlgii5" thema="Nature" year="2023" author="Vasilevskaya A.">
+  <specialOldCard id="4059fghlgii5"  year="2023" thema="Nature" author="Vasilevskaya A.">
     <type>Ordinary</type>
     <country>Belarus</country>
     <valuable>Historical</valuable>
@@ -44,7 +44,7 @@
     <country>Russia</country>
     <valuable>Thematic</valuable>
   </specialOldCard>
-  <specialOldCard id="kfjg98dfg8df" thema="Sport" year="2021" author="Radevich A.">
+  <specialOldCard id="kfjg98dfg8df" thema="Sport"  author="Radevich A." year="2021" >
     <type>Promotional</type>
     <country>Kazakhstan</country>
     <valuable>Thematic</valuable>
@@ -54,7 +54,7 @@
     <country>Kazakhstan</country>
     <valuable>Collectible</valuable>
   </specialOldCard>
-  <specialOldCard id="po4562psdfqw" thema="Religion" year="2022" author="Gavrilenko U.">
+  <specialOldCard id="po4562psdfqw"  year="2022" author="Gavrilenko U." thema="Religion">
     <type>Promotional</type>
     <country>Ukraine</country>
     <valuable>Historical</valuable>

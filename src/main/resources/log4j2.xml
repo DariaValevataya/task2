@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+  <Properties>
+    <property name="LOG_DIR">logs</property>
+    <property name="log_pattern">%d{HH:mm:ss.SSS} [%t] %-5level %logger{1} - %msg%n</property>
+  </Properties>
+  <Appenders>
+    <Console name="LogToConsole" target="SYSTEM_OUT">
+      <PatternLayout pattern="${log_pattern}"/>
+    </Console>
+    <RollingFile name="LogToFile" filename="${LOG_DIR}/logs.log"  filePattern="${LOG_DIR}/logs.%d{dd-MMM}.log" append="true">
+      <PatternLayout pattern="${log_pattern}"/>
+      <Policies>
+        <SizeBasedTriggeringPolicy size="25 MB"/>
+      </Policies>
+      <DefaultRolloverStrategy max="5"/>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="LogToConsole"/>
+      <AppenderRef ref="LogToFile"/>
+    </Root>
+  </Loggers>
+</Configuration>
