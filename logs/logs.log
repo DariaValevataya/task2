@@ -301,3 +301,307 @@
 
 12:07:31.896 [main] INFO  FileCardHandler -  oldCards
 12:07:31.896 [main] INFO  FileCardHandler - /Parsing ended
+18:35:38.727 [main] INFO  FileCardHandler - oldCards  xsi:noNamespaceSchemaLocation=card.xsd xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance
+18:35:38.729 [main] INFO  FileCardHandler - 
+
+  
+18:35:38.729 [main] INFO  FileCardHandler - baseOldCard  id=45рfgh90fh9f thema=Landscape year=2014 author=Matveev A.
+18:35:38.730 [main] INFO  FileCardHandler - 
+    
+18:35:38.730 [main] INFO  FileCardHandler - type 
+18:35:38.730 [main] INFO  FileCardHandler - Promotional
+18:35:38.730 [main] INFO  FileCardHandler -  type
+18:35:38.730 [main] INFO  FileCardHandler - 
+    
+18:35:38.730 [main] INFO  FileCardHandler - country 
+18:35:38.731 [main] INFO  FileCardHandler - Belarus
+18:35:38.731 [main] INFO  FileCardHandler -  country
+18:35:38.731 [main] INFO  FileCardHandler - 
+  
+18:35:38.731 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.731 [main] INFO  FileCardHandler - 
+  
+18:35:38.731 [main] INFO  FileCardHandler - baseOldCard  id=sdfo09sdf87d year=2022 thema=Sport
+18:35:38.732 [main] INFO  FileCardHandler - 
+    
+18:35:38.732 [main] INFO  FileCardHandler - type 
+18:35:38.732 [main] INFO  FileCardHandler - Ordinary
+18:35:38.732 [main] INFO  FileCardHandler -  type
+18:35:38.732 [main] INFO  FileCardHandler - 
+    
+18:35:38.732 [main] INFO  FileCardHandler - country 
+18:35:38.732 [main] INFO  FileCardHandler - Russia
+18:35:38.732 [main] INFO  FileCardHandler -  country
+18:35:38.732 [main] INFO  FileCardHandler - 
+  
+18:35:38.732 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.732 [main] INFO  FileCardHandler - 
+  
+18:35:38.733 [main] INFO  FileCardHandler - baseOldCard  id=sew43k56l45k author=Karakozov R. thema=People year=2019
+18:35:38.733 [main] INFO  FileCardHandler - 
+    
+18:35:38.733 [main] INFO  FileCardHandler - type 
+18:35:38.733 [main] INFO  FileCardHandler - Greeting
+18:35:38.733 [main] INFO  FileCardHandler -  type
+18:35:38.733 [main] INFO  FileCardHandler - 
+    
+18:35:38.733 [main] INFO  FileCardHandler - country 
+18:35:38.733 [main] INFO  FileCardHandler - Georgia
+18:35:38.734 [main] INFO  FileCardHandler -  country
+18:35:38.734 [main] INFO  FileCardHandler - 
+  
+18:35:38.734 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.734 [main] INFO  FileCardHandler - 
+  
+18:35:38.734 [main] INFO  FileCardHandler - baseOldCard  id=podf8g90dofg thema=Sport year=2024 author=Sergeev D.
+18:35:38.734 [main] INFO  FileCardHandler - 
+    
+18:35:38.734 [main] INFO  FileCardHandler - type 
+18:35:38.734 [main] INFO  FileCardHandler - Greeting
+18:35:38.734 [main] INFO  FileCardHandler -  type
+18:35:38.735 [main] INFO  FileCardHandler - 
+    
+18:35:38.735 [main] INFO  FileCardHandler - country 
+18:35:38.735 [main] INFO  FileCardHandler - Georgia
+18:35:38.735 [main] INFO  FileCardHandler -  country
+18:35:38.735 [main] INFO  FileCardHandler - 
+  
+18:35:38.735 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.735 [main] INFO  FileCardHandler - 
+  
+18:35:38.736 [main] INFO  FileCardHandler - baseOldCard  id=iodfg94jh45h year=2022 thema=Nature
+18:35:38.736 [main] INFO  FileCardHandler - 
+    
+18:35:38.736 [main] INFO  FileCardHandler - type 
+18:35:38.736 [main] INFO  FileCardHandler - Promotional
+18:35:38.736 [main] INFO  FileCardHandler -  type
+18:35:38.736 [main] INFO  FileCardHandler - 
+    
+18:35:38.736 [main] INFO  FileCardHandler - country 
+18:35:38.736 [main] INFO  FileCardHandler - Ukraine
+18:35:38.736 [main] INFO  FileCardHandler -  country
+18:35:38.736 [main] INFO  FileCardHandler - 
+  
+18:35:38.736 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.737 [main] INFO  FileCardHandler - 
+  
+18:35:38.737 [main] INFO  FileCardHandler - baseOldCard  id=453ojhd345j4 thema=Religion author=Smirnov A. year=2020
+18:35:38.737 [main] INFO  FileCardHandler - 
+    
+18:35:38.737 [main] INFO  FileCardHandler - type 
+18:35:38.737 [main] INFO  FileCardHandler - Ordinary
+18:35:38.737 [main] INFO  FileCardHandler -  type
+18:35:38.737 [main] INFO  FileCardHandler - 
+    
+18:35:38.737 [main] INFO  FileCardHandler - country 
+18:35:38.737 [main] INFO  FileCardHandler - Kazakhstan
+18:35:38.738 [main] INFO  FileCardHandler -  country
+18:35:38.738 [main] INFO  FileCardHandler - 
+  
+18:35:38.738 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.738 [main] INFO  FileCardHandler - 
+  
+18:35:38.738 [main] INFO  FileCardHandler - baseOldCard  id=sdf983jfiro8 thema=Landscape year=2019 author=Timofeev G.
+18:35:38.738 [main] INFO  FileCardHandler - 
+    
+18:35:38.738 [main] INFO  FileCardHandler - type 
+18:35:38.738 [main] INFO  FileCardHandler - Ordinary
+18:35:38.738 [main] INFO  FileCardHandler -  type
+18:35:38.739 [main] INFO  FileCardHandler - 
+    
+18:35:38.739 [main] INFO  FileCardHandler - country 
+18:35:38.739 [main] INFO  FileCardHandler - Kazakhstan
+18:35:38.739 [main] INFO  FileCardHandler -  country
+18:35:38.739 [main] INFO  FileCardHandler - 
+  
+18:35:38.739 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.739 [main] INFO  FileCardHandler - 
+  
+18:35:38.739 [main] INFO  FileCardHandler - baseOldCard  id=349dfsf3432d thema=People year=2012
+18:35:38.740 [main] INFO  FileCardHandler - 
+    
+18:35:38.740 [main] INFO  FileCardHandler - type 
+18:35:38.740 [main] INFO  FileCardHandler - Ordinary
+18:35:38.740 [main] INFO  FileCardHandler -  type
+18:35:38.740 [main] INFO  FileCardHandler - 
+    
+18:35:38.740 [main] INFO  FileCardHandler - country 
+18:35:38.740 [main] INFO  FileCardHandler - Belarus
+18:35:38.740 [main] INFO  FileCardHandler -  country
+18:35:38.740 [main] INFO  FileCardHandler - 
+  
+18:35:38.740 [main] INFO  FileCardHandler -  baseOldCard
+18:35:38.740 [main] INFO  FileCardHandler - 
+
+  
+18:35:38.740 [main] INFO  FileCardHandler - specialOldCard  id=4059fghlgii5 year=2023 thema=Nature author=Vasilevskaya A.
+18:35:38.740 [main] INFO  FileCardHandler - 
+    
+18:35:38.740 [main] INFO  FileCardHandler - type 
+18:35:38.740 [main] INFO  FileCardHandler - Ordinary
+18:35:38.742 [main] INFO  FileCardHandler -  type
+18:35:38.742 [main] INFO  FileCardHandler - 
+    
+18:35:38.742 [main] INFO  FileCardHandler - country 
+18:35:38.742 [main] INFO  FileCardHandler - Belarus
+18:35:38.742 [main] INFO  FileCardHandler -  country
+18:35:38.742 [main] INFO  FileCardHandler - 
+    
+18:35:38.742 [main] INFO  FileCardHandler - valuable 
+18:35:38.742 [main] INFO  FileCardHandler - Historical
+18:35:38.742 [main] INFO  FileCardHandler -  valuable
+18:35:38.742 [main] INFO  FileCardHandler - 
+  
+18:35:38.742 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.742 [main] INFO  FileCardHandler - 
+  
+18:35:38.742 [main] INFO  FileCardHandler - specialOldCard  id=dfu5847udf8e thema=People year=2021
+18:35:38.742 [main] INFO  FileCardHandler - 
+    
+18:35:38.742 [main] INFO  FileCardHandler - type 
+18:35:38.743 [main] INFO  FileCardHandler - Greeting
+18:35:38.743 [main] INFO  FileCardHandler -  type
+18:35:38.743 [main] INFO  FileCardHandler - 
+    
+18:35:38.743 [main] INFO  FileCardHandler - country 
+18:35:38.743 [main] INFO  FileCardHandler - Russia
+18:35:38.743 [main] INFO  FileCardHandler -  country
+18:35:38.743 [main] INFO  FileCardHandler - 
+    
+18:35:38.743 [main] INFO  FileCardHandler - valuable 
+18:35:38.743 [main] INFO  FileCardHandler - Thematic
+18:35:38.743 [main] INFO  FileCardHandler -  valuable
+18:35:38.743 [main] INFO  FileCardHandler - 
+  
+18:35:38.744 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.744 [main] INFO  FileCardHandler - 
+  
+18:35:38.744 [main] INFO  FileCardHandler - specialOldCard  id=kfjg98dfg8df thema=Sport author=Radevich A. year=2021
+18:35:38.744 [main] INFO  FileCardHandler - 
+    
+18:35:38.744 [main] INFO  FileCardHandler - type 
+18:35:38.744 [main] INFO  FileCardHandler - Promotional
+18:35:38.744 [main] INFO  FileCardHandler -  type
+18:35:38.744 [main] INFO  FileCardHandler - 
+    
+18:35:38.744 [main] INFO  FileCardHandler - country 
+18:35:38.744 [main] INFO  FileCardHandler - Kazakhstan
+18:35:38.744 [main] INFO  FileCardHandler -  country
+18:35:38.744 [main] INFO  FileCardHandler - 
+    
+18:35:38.744 [main] INFO  FileCardHandler - valuable 
+18:35:38.744 [main] INFO  FileCardHandler - Thematic
+18:35:38.744 [main] INFO  FileCardHandler -  valuable
+18:35:38.744 [main] INFO  FileCardHandler - 
+  
+18:35:38.744 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.744 [main] INFO  FileCardHandler - 
+  
+18:35:38.744 [main] INFO  FileCardHandler - specialOldCard  id=we943ko745is thema=People year=2022
+18:35:38.744 [main] INFO  FileCardHandler - 
+    
+18:35:38.746 [main] INFO  FileCardHandler - type 
+18:35:38.746 [main] INFO  FileCardHandler - Promotional
+18:35:38.746 [main] INFO  FileCardHandler -  type
+18:35:38.746 [main] INFO  FileCardHandler - 
+    
+18:35:38.746 [main] INFO  FileCardHandler - country 
+18:35:38.746 [main] INFO  FileCardHandler - Kazakhstan
+18:35:38.746 [main] INFO  FileCardHandler -  country
+18:35:38.746 [main] INFO  FileCardHandler - 
+    
+18:35:38.746 [main] INFO  FileCardHandler - valuable 
+18:35:38.746 [main] INFO  FileCardHandler - Collectible
+18:35:38.746 [main] INFO  FileCardHandler -  valuable
+18:35:38.746 [main] INFO  FileCardHandler - 
+  
+18:35:38.746 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.746 [main] INFO  FileCardHandler - 
+  
+18:35:38.746 [main] INFO  FileCardHandler - specialOldCard  id=po4562psdfqw year=2022 author=Gavrilenko U. thema=Religion
+18:35:38.746 [main] INFO  FileCardHandler - 
+    
+18:35:38.746 [main] INFO  FileCardHandler - type 
+18:35:38.746 [main] INFO  FileCardHandler - Promotional
+18:35:38.746 [main] INFO  FileCardHandler -  type
+18:35:38.746 [main] INFO  FileCardHandler - 
+    
+18:35:38.746 [main] INFO  FileCardHandler - country 
+18:35:38.747 [main] INFO  FileCardHandler - Ukraine
+18:35:38.747 [main] INFO  FileCardHandler -  country
+18:35:38.747 [main] INFO  FileCardHandler - 
+    
+18:35:38.747 [main] INFO  FileCardHandler - valuable 
+18:35:38.747 [main] INFO  FileCardHandler - Historical
+18:35:38.747 [main] INFO  FileCardHandler -  valuable
+18:35:38.747 [main] INFO  FileCardHandler - 
+  
+18:35:38.747 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.747 [main] INFO  FileCardHandler - 
+  
+18:35:38.747 [main] INFO  FileCardHandler - specialOldCard  id=xcv67bnm87nb thema=Architecture year=2024
+18:35:38.747 [main] INFO  FileCardHandler - 
+    
+18:35:38.747 [main] INFO  FileCardHandler - type 
+18:35:38.747 [main] INFO  FileCardHandler - Promotional
+18:35:38.747 [main] INFO  FileCardHandler -  type
+18:35:38.747 [main] INFO  FileCardHandler - 
+    
+18:35:38.747 [main] INFO  FileCardHandler - country 
+18:35:38.747 [main] INFO  FileCardHandler - Belarus
+18:35:38.747 [main] INFO  FileCardHandler -  country
+18:35:38.747 [main] INFO  FileCardHandler - 
+    
+18:35:38.747 [main] INFO  FileCardHandler - valuable 
+18:35:38.747 [main] INFO  FileCardHandler - Historical
+18:35:38.747 [main] INFO  FileCardHandler -  valuable
+18:35:38.747 [main] INFO  FileCardHandler - 
+  
+18:35:38.748 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.748 [main] INFO  FileCardHandler - 
+  
+18:35:38.748 [main] INFO  FileCardHandler - specialOldCard  id=nmlk560xc98v thema=Landscape year=2020 author=Ulasevich S.
+18:35:38.748 [main] INFO  FileCardHandler - 
+    
+18:35:38.748 [main] INFO  FileCardHandler - type 
+18:35:38.748 [main] INFO  FileCardHandler - Ordinary
+18:35:38.748 [main] INFO  FileCardHandler -  type
+18:35:38.748 [main] INFO  FileCardHandler - 
+    
+18:35:38.748 [main] INFO  FileCardHandler - country 
+18:35:38.748 [main] INFO  FileCardHandler - Russia
+18:35:38.748 [main] INFO  FileCardHandler -  country
+18:35:38.749 [main] INFO  FileCardHandler - 
+    
+18:35:38.749 [main] INFO  FileCardHandler - valuable 
+18:35:38.749 [main] INFO  FileCardHandler - Historical
+18:35:38.749 [main] INFO  FileCardHandler -  valuable
+18:35:38.749 [main] INFO  FileCardHandler - 
+  
+18:35:38.749 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.749 [main] INFO  FileCardHandler - 
+  
+18:35:38.749 [main] INFO  FileCardHandler - specialOldCard  id=rfbn45xz45bn thema=Sport year=2019
+18:35:38.749 [main] INFO  FileCardHandler - 
+    
+18:35:38.749 [main] INFO  FileCardHandler - type 
+18:35:38.749 [main] INFO  FileCardHandler - Promotional
+18:35:38.749 [main] INFO  FileCardHandler -  type
+18:35:38.749 [main] INFO  FileCardHandler - 
+    
+18:35:38.749 [main] INFO  FileCardHandler - country 
+18:35:38.749 [main] INFO  FileCardHandler - Georgia
+18:35:38.749 [main] INFO  FileCardHandler -  country
+18:35:38.749 [main] INFO  FileCardHandler - 
+    
+18:35:38.750 [main] INFO  FileCardHandler - valuable 
+18:35:38.750 [main] INFO  FileCardHandler - Collectible
+18:35:38.750 [main] INFO  FileCardHandler -  valuable
+18:35:38.750 [main] INFO  FileCardHandler - 
+  
+18:35:38.750 [main] INFO  FileCardHandler -  specialOldCard
+18:35:38.750 [main] INFO  FileCardHandler - 
+
+18:35:38.750 [main] INFO  FileCardHandler -  oldCards
+18:35:38.750 [main] INFO  FileCardHandler - /Parsing ended
+23:13:35.333 [main] ERROR CardDomBuilder - C:\univer\Java\tasks\task2\xml\cards.xml (Не удается найти указанный файл)

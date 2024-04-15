@@ -1,4 +1,4 @@
-package com.epam.handler;
+package com.epam.valevataya.handler;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -24,6 +24,7 @@ public class CardErrorHandler implements ErrorHandler {
   public void fatalError(SAXParseException exception) throws SAXException {
     LOGGER.log(Level.FATAL, getLineColumnNumber(exception) + "-" + exception.getMessage());
   }
+
   private String getLineColumnNumber(SAXParseException exception) {
     return exception.getLineNumber() + " : " + exception.getColumnNumber();
   }

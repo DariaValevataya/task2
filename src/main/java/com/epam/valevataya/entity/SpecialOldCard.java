@@ -1,4 +1,4 @@
-package com.epam.entity;
+package com.epam.valevataya.entity;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -6,24 +6,31 @@ import java.util.Objects;
 public class SpecialOldCard extends BaseOldCard {
   private String valuable;
 
-  public SpecialOldCard(String id, String thema, LocalDate year, String author, String country, String type) {
-    super(id, thema, year, author, country, type);
+  private SpecialOldCard() {
+    super();
   }
 
   public String getValuable() {
     return valuable;
   }
+  public static SpecialOldCard.Builder newBuilder() {
+    return new SpecialOldCard().new Builder();
+  }
 
-  public class Builder extends BaseOldCard.Builder{
-    Builder(){};
-    public Builder setValuable(String valuable){
-      SpecialOldCard.this.valuable=valuable;
+  public class Builder extends BaseOldCard.Builder {
+    Builder() {
+    }
+
+    public Builder setValuable(String valuable) {
+      SpecialOldCard.this.valuable = valuable;
       return this;
     }
-    public SpecialOldCard build(){
+
+    public SpecialOldCard build() {
       return SpecialOldCard.this;
     }
   }
+
   @Override
   public boolean equals(Object o) {
     return super.equals(o) && Objects.equals(valuable, this.valuable);
@@ -31,7 +38,7 @@ public class SpecialOldCard extends BaseOldCard {
 
   @Override
   public String toString() {
-    return super.toString() + "valuable" + valuable;
+    return super.toString() + "valuable='" + valuable+"'";
   }
 
   @Override
