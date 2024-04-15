@@ -93,8 +93,14 @@ public class CardDomBuilder {
   }
 
   public SpecialOldCard buildSpecialCard(Element specialCardElement) {
-    SpecialOldCard card = SpecialOldCard.newBuilder()
+    SpecialOldCard card =(SpecialOldCard) SpecialOldCard.newBuilder()
             .setValuable(getElementTextContent(specialCardElement, "valuble"))
+            .setId(specialCardElement.getAttribute("id"))
+            .setThema(specialCardElement.getAttribute("thema"))
+            .setYear(Integer.parseInt(specialCardElement.getAttribute("year")))
+            .setAuthor(specialCardElement.getAttribute("author"))
+            .setType(getElementTextContent(specialCardElement, "type"))
+            .setCountry(getElementTextContent(specialCardElement, "country"))
             .build();
     return card;
   }

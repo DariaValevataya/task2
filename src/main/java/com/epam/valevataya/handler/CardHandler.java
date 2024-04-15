@@ -26,7 +26,7 @@ public class CardHandler extends DefaultHandler {
     return specialCards;
   }
 
-  public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+  /*public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
     if (qName.equals("baseOldCard")) {
       String id = attributes.getValue("id");
       String author = attributes.getValue("author");
@@ -41,4 +41,5 @@ public class CardHandler extends DefaultHandler {
       baseCards.add(card);
     }
   }
+   */
 }
