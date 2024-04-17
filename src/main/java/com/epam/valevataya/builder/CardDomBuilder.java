@@ -1,4 +1,4 @@
-package com.epam.valevataya.DOMbuilder;
+package com.epam.valevataya.builder;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,6 +7,7 @@ import com.epam.valevataya.entity.BaseOldCard;
 import com.epam.valevataya.entity.SpecialOldCard;
 
 import com.epam.valevataya.exception.CardException;
+import com.epam.valevataya.handler.CardXmlTag;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -36,7 +37,7 @@ public class CardDomBuilder {
       builder = factory.newDocumentBuilder();
     } catch (ParserConfigurationException e) {
       LOGGER.error(e.getMessage());
-      throw new CardException();
+      throw new CardException(e);
     }
   }
 
@@ -52,7 +53,7 @@ public class CardDomBuilder {
     try {
       Document document = builder.parse(new File(filename));
       Element root = document.getDocumentElement();
-      NodeList baseCardsList = root.getElementsByTagName("baseOldCard");
+      NodeList baseCardsList = root.getElementsByTagName(CardXmlTag.BASE_OLD_CARD.getTagValue());
       for (int i = 0; i < baseCardsList.getLength(); i++) {
         Element baseCardElement = (Element) baseCardsList.item(i);
         BaseOldCard baseCard = buildBaseCard(baseCardElement);
@@ -60,7 +61,7 @@ public class CardDomBuilder {
       }
     } catch (SAXException | IOException e) {
       LOGGER.error(e.getMessage());
-      throw new CardException();
+      throw new CardException(e);
     }
   }
 
@@ -68,7 +69,7 @@ public class CardDomBuilder {
     try {
       Document document = builder.parse(new File(filename));
       Element root = document.getDocumentElement();
-      NodeList specialCardsList = root.getElementsByTagName("specialOldCard");
+      NodeList specialCardsList = root.getElementsByTagName(CardXmlTag.SPECIAL_OLD_CARD.getTagValue());
       for (int i = 0; i < specialCardsList.getLength(); i++) {
         Element specialCardElement = (Element) specialCardsList.item(i);
         SpecialOldCard specialCard = buildSpecialCard(specialCardElement);
@@ -76,31 +77,31 @@ public class CardDomBuilder {
       }
     } catch (SAXException | IOException e) {
       LOGGER.error(e.getMessage());
-      throw new CardException();
+      throw new CardException(e);
     }
   }
 
   public BaseOldCard buildBaseCard(Element baseCardElement) {
     BaseOldCard card = BaseOldCard.newBuilder()
-            .setId(baseCardElement.getAttribute("id"))
-            .setThema(baseCardElement.getAttribute("thema"))
-            .setYear(Integer.parseInt(baseCardElement.getAttribute("year")))
-            .setAuthor(baseCardElement.getAttribute("author"))
-            .setType(getElementTextContent(baseCardElement, "type"))
-            .setCountry(getElementTextContent(baseCardElement, "country"))
+            .setId(baseCardElement.getAttribute(CardXmlTag.ID.getTagValue()))
+            .setThema(baseCardElement.getAttribute(CardXmlTag.TYPE.getTagValue()))
+            .setYear(Integer.parseInt(baseCardElement.getAttribute(CardXmlTag.YEAR.getTagValue())))
+            .setAuthor(baseCardElement.getAttribute(CardXmlTag.AUTHOR.getTagValue()))
+            .setType(getElementTextContent(baseCardElement, CardXmlTag.TYPE.getTagValue()))
+            .setCountry(getElementTextContent(baseCardElement, CardXmlTag.COUNTRY.getTagValue()))
             .build();
     return card;
   }
 
   public SpecialOldCard buildSpecialCard(Element specialCardElement) {
-    SpecialOldCard card =(SpecialOldCard) SpecialOldCard.newBuilder()
-            .setValuable(getElementTextContent(specialCardElement, "valuble"))
-            .setId(specialCardElement.getAttribute("id"))
-            .setThema(specialCardElement.getAttribute("thema"))
-            .setYear(Integer.parseInt(specialCardElement.getAttribute("year")))
-            .setAuthor(specialCardElement.getAttribute("author"))
-            .setType(getElementTextContent(specialCardElement, "type"))
-            .setCountry(getElementTextContent(specialCardElement, "country"))
+    SpecialOldCard card = (SpecialOldCard) SpecialOldCard.newBuilder()
+            .setValuable(getElementTextContent(specialCardElement, CardXmlTag.VALUABLE.getTagValue()))
+            .setId(specialCardElement.getAttribute(CardXmlTag.ID.getTagValue()))
+            .setThema(specialCardElement.getAttribute(CardXmlTag.THEMA.getTagValue()))
+            .setYear(Integer.parseInt(specialCardElement.getAttribute(CardXmlTag.YEAR.getTagValue())))
+            .setAuthor(specialCardElement.getAttribute(CardXmlTag.AUTHOR.getTagValue()))
+            .setType(getElementTextContent(specialCardElement, CardXmlTag.TYPE.getTagValue()))
+            .setCountry(getElementTextContent(specialCardElement, CardXmlTag.COUNTRY.getTagValue()))
             .build();
     return card;
   }

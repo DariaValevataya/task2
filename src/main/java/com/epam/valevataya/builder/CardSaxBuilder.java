@@ -1,10 +1,12 @@
-package com.epam.valevataya.SAXbuilder;
+package com.epam.valevataya.builder;
 
 import com.epam.valevataya.entity.BaseOldCard;
 import com.epam.valevataya.entity.SpecialOldCard;
 import com.epam.valevataya.exception.CardException;
 import com.epam.valevataya.handler.CardErrorHandler;
 import com.epam.valevataya.handler.CardHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
@@ -15,6 +17,7 @@ import java.io.IOException;
 import java.util.Set;
 
 public class CardSaxBuilder {
+  static final Logger LOGGER = LogManager.getLogger();
   private Set<BaseOldCard> baseCards;
   private Set<SpecialOldCard> specialCards;
   private CardHandler handler = new CardHandler();
@@ -26,6 +29,7 @@ public class CardSaxBuilder {
       SAXParser saxParser = factory.newSAXParser();
       reader = saxParser.getXMLReader();
     } catch (ParserConfigurationException | SAXException e) {
+      LOGGER.error(e.getMessage());
       throw new CardException(e);
     }
     reader.setErrorHandler(new CardErrorHandler());
@@ -43,19 +47,21 @@ public class CardSaxBuilder {
   public void buildSetBaseCards(String filename) throws CardException {
     try {
       reader.parse(filename);
-    }catch (IOException | SAXException e){
-      throw new CardException();
+    } catch (IOException | SAXException e) {
+      LOGGER.error(e.getMessage());
+      throw new CardException(e);
     }
-    baseCards=handler.getBaseCards();
+    baseCards = handler.getBaseCards();
   }
 
-  public void buildSetSpecialCards(String filename) throws CardException{
+  public void buildSetSpecialCards(String filename) throws CardException {
     try {
       reader.parse(filename);
-    }catch (IOException | SAXException e){
-      throw new CardException();
+    } catch (IOException | SAXException e) {
+      LOGGER.error(e.getMessage());
+      throw new CardException(e);
     }
-   // baseCards=handler.getSpecialCards();
+    specialCards = handler.getSpecialCards();
   }
 
 

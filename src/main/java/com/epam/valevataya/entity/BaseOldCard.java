@@ -1,8 +1,6 @@
 package com.epam.valevataya.entity;
 
-import java.time.*;
 import java.util.Objects;
-import java.util.Optional;
 
 public class BaseOldCard {
   private String id;
@@ -63,7 +61,7 @@ public class BaseOldCard {
     }
 
     public Builder setAuthor(String author) {
-        BaseOldCard.this.author = author;
+      BaseOldCard.this.author = author;
       return this;
 
     }
@@ -93,14 +91,14 @@ public class BaseOldCard {
 
   @Override
   public String toString() {
-    return "OldCard{" +
+    return "\nBaseCard{" +
             "id='" + id + '\'' +
             ", thema='" + thema + '\'' +
             ", year=" + year +
             ", author='" + author + '\'' +
             ", country='" + country + '\'' +
             ", type='" + type + '\'' +
-            '}'+'\n';
+            '}';
   }
 
   @Override

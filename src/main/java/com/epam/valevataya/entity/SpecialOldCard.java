@@ -13,6 +13,7 @@ public class SpecialOldCard extends BaseOldCard {
   public String getValuable() {
     return valuable;
   }
+
   public static SpecialOldCard.Builder newBuilder() {
     return new SpecialOldCard().new Builder();
   }
@@ -38,7 +39,7 @@ public class SpecialOldCard extends BaseOldCard {
 
   @Override
   public String toString() {
-    return super.toString() + "valuable='" + valuable+"'";
+    return super.toString().replace("BaseCard", "SpecialCard").replace("}", ", valuable='" + valuable + "'}");
   }
 
   @Override

@@ -23,9 +23,10 @@ public class FileCardHandler extends DefaultHandler {
   }
 
   public void endElement(String nameSpaceURI, String localName, String qName) {
-    LOGGER.info(" "+ qName);
+    LOGGER.info(" " + qName);
   }
-  public void endDocument(){
-    LOGGER.info("/Parsing ended");
+
+  public void endDocument() {
+    LOGGER.info("Parsing ended");
   }
 }
