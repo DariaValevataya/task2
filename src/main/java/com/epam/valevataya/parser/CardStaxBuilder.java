@@ -20,6 +20,9 @@ public class CardStaxBuilder {
   static final Logger LOGGER = LogManager.getLogger();
   private Set<BaseOldCard> baseOldCardSet;
   private Set<SpecialOldCard> specialOldCardSet;
+  private BaseOldCard.Builder baseBuilder = BaseOldCard.newBuilder();
+  private SpecialOldCard.Builder specialBuilder = SpecialOldCard.newBuilder();
+
   private XMLInputFactory inputFactory;
 
   public CardStaxBuilder() {
@@ -77,7 +80,7 @@ public class CardStaxBuilder {
   }
 
   public BaseOldCard buildBaseCard(XMLStreamReader reader) throws XMLStreamException {
-    BaseOldCard card = BaseOldCard.newBuilder()
+    BaseOldCard card = baseBuilder
             .setId(reader.getAttributeValue(null, CardXmlTag.ID.getTagValue()))
             .setThema(reader.getAttributeValue(null, CardXmlTag.THEMA.getTagValue()))
             .setAuthor(reader.getAttributeValue(null, CardXmlTag.AUTHOR.getTagValue()))
@@ -90,13 +93,14 @@ public class CardStaxBuilder {
         case XMLStreamConstants.START_ELEMENT:
           name = reader.getLocalName();
           switch (CardXmlTag.valueOf(name.toUpperCase())) {
-            case COUNTRY -> card.newBuilder().setCountry(getXMLText(reader));
-            case TYPE -> card.newBuilder().setType(getXMLText(reader));
+            case COUNTRY -> baseBuilder.setCountry(getXMLText(reader));
+            case TYPE -> baseBuilder.setType(getXMLText(reader));
           }
           break;
         case XMLStreamConstants.END_ELEMENT:
           name = reader.getLocalName();
           if (CardXmlTag.valueOf(name.toUpperCase().replace("BASEOLDCARD", "BASE_OLD_CARD")).equals(CardXmlTag.BASE_OLD_CARD)) {
+            baseBuilder=BaseOldCard.newBuilder();
             return card;
           }
       }
@@ -105,7 +109,7 @@ public class CardStaxBuilder {
   }
 
   public SpecialOldCard buildSpecialCard(XMLStreamReader reader) throws XMLStreamException {
-    SpecialOldCard card = (SpecialOldCard) SpecialOldCard.newBuilder()
+    SpecialOldCard card = (SpecialOldCard) specialBuilder
             .setId(reader.getAttributeValue(null, CardXmlTag.ID.getTagValue()))
             .setThema(reader.getAttributeValue(null, CardXmlTag.THEMA.getTagValue()))
             .setAuthor(reader.getAttributeValue(null, CardXmlTag.AUTHOR.getTagValue()))
@@ -118,14 +122,15 @@ public class CardStaxBuilder {
         case XMLStreamConstants.START_ELEMENT:
           name = reader.getLocalName();
           switch (CardXmlTag.valueOf(name.toUpperCase())) {
-            case COUNTRY -> card.newBuilder().setCountry(getXMLText(reader));
-            case TYPE -> card.newBuilder().setType(getXMLText(reader));
-            case VALUABLE -> card.newBuilder().setValuable(getXMLText(reader));
+            case COUNTRY -> specialBuilder.setCountry(getXMLText(reader));
+            case TYPE -> specialBuilder.setType(getXMLText(reader));
+            case VALUABLE -> specialBuilder.setValuable(getXMLText(reader));
           }
           break;
         case XMLStreamConstants.END_ELEMENT:
           name = reader.getLocalName();
           if (CardXmlTag.valueOf(name.toUpperCase().replace("SPECIALOLDCARD", "SPECIAL_OLD_CARD")).equals(CardXmlTag.SPECIAL_OLD_CARD)) {
+            specialBuilder=SpecialOldCard.newBuilder();
             return card;
           }
       }
