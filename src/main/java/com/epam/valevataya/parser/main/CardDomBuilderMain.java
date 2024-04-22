@@ -1,6 +1,6 @@
-package com.epam.valevataya.builder.main;
+package com.epam.valevataya.parser.main;
 
-import com.epam.valevataya.builder.CardDomBuilder;
+import com.epam.valevataya.parser.CardDomBuilder;
 import com.epam.valevataya.exception.CardException;
 
 public class CardDomBuilderMain {

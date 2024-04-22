@@ -1,4 +1,4 @@
-package com.epam.valevataya.builder;
+package com.epam.valevataya.parser;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,7 +7,7 @@ import com.epam.valevataya.entity.BaseOldCard;
 import com.epam.valevataya.entity.SpecialOldCard;
 
 import com.epam.valevataya.exception.CardException;
-import com.epam.valevataya.handler.CardXmlTag;
+import com.epam.valevataya.parser.handler.CardXmlTag;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;

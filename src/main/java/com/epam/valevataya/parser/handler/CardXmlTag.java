@@ -1,6 +1,7 @@
-package com.epam.valevataya.handler;
+package com.epam.valevataya.parser.handler;
 
 public enum CardXmlTag {
+  OLD_CARD("oldCards"),
   BASE_OLD_CARD("baseOldCard"),
   SPECIAL_OLD_CARD("specialOldCard"),
   ID("id"),

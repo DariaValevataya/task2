@@ -1,7 +1,6 @@
-package com.epam.valevataya.builder.main;
+package com.epam.valevataya.parser.main;
 
-import com.epam.valevataya.builder.CardSaxBuilder;
-import com.epam.valevataya.builder.CardStaxBuilder;
+import com.epam.valevataya.parser.CardStaxBuilder;
 import com.epam.valevataya.exception.CardException;
 
 public class CardStaxBuilderMain {

@@ -1,7 +1,7 @@
 package com.epam.valevataya.validator.impl;
 
 import com.epam.valevataya.exception.CardException;
-import com.epam.valevataya.handler.CardErrorHandler;
+import com.epam.valevataya.parser.handler.CardErrorHandler;
 import com.epam.valevataya.validator.CardXmlValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

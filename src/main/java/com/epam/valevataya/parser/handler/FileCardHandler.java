@@ -1,4 +1,4 @@
-package com.epam.valevataya.handler;
+package com.epam.valevataya.parser.handler;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
